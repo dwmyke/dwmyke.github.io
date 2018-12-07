@@ -1,5 +1,8 @@
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
 body {
-  max-width: 1920px;
-    margin: auto;
-    font-family: verdana;
 }
