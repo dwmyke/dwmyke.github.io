@@ -8,30 +8,59 @@
     Graphics Designer, Video Editor, Writer, Director">
     <meta name="keywords" content="Design,Director,Editor,Writer,Video,Motion,Graphics,">
     <title>Mikel-Jon West</title>
+    <script src="script.js"></script>
     <script src="https://player.vimeo.com/api/player.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+    <script src="https://cdn.plyr.io/3.4.7/plyr.polyfilled.js" async></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.4.7/plyr.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mikel-Jon (Mike) West</h1>
+    <header class="header">
+        <h1 class="title">Mikel-Jon (Mike) West</h1>
         <ul class="main-nav">
-            <li class="item1">Writer/Director</li>
-            <li class="item3">Video Editor</li>
-            <li class="item4">Graphics Designer</li>
+            <li class="writerDirector"><a href="#writerDirector">Writer/Director</a></li>
+            <li class="videoEditor"><a href="#videoEditor">Video Editor</a></li>
+            <li class="designer"><a href="#designer">Graphics &amp; Web Designer</a></li>
         </ul>
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <h3>Demo Reel </h3>
+        <img class="profile" src="./images/profile.png" alt="Profile">
+        <div class="reel" style="padding:56.25% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/254593581?title=0&byline=0&portrait=0"
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
                 mozallowfullscreen allowfullscreen></iframe>
         </div>
     </header>
+
     <section id="writerDirector">
         <h1>Writer/Director</h1>
-        <p>I write and direct short and feature length films for <strong><a href="https://mikewest.pro" target="_blank">Mega Ultra Studios</a></strong> like <em>Left for Dead,</em> available </p>
+        <p>I write and direct feature length films for <strong><a href="https://megaultra.space" target="_blank">Mega Ultra Studios</a></strong> like <em><a href="https://megaultra.space/features.html" target="_blank">Left for Dead</a>,</em> available on <strong><a href="https://www.amazon.com/dp/B00NKMOW40/ref=cm_sw_r_tw_dp_x_48nGAbTWHHZ9Q" target="_blank">Amazon Prime</a></strong> and streaming on <strong><a href="https://channelstore.roku.com/details/86186/24-hour-movie-channel" target="_blank">Roku</a></strong> and short films like the three-time award-winner, <em><a href="https://www.youtube.com/watch?v=ERoAFhlFZ-s" target="_blank">My New Best Friend.</a></em> </p>
+
+        <div class="gallery">
+            <div class="lfd galleryItem">
+                <h2 class="title">Left for Dead</h2>
+                <p class="description">They killed their little sister. Now, these hell kittens are coming after the hitmen and they
+                    will show no mercy. Soon, they'll all be Left for Dead.
+                    <br><br>Starring: Holly Rebelle, General Blackery, Joy Coy
+                    <br>Runtime: 1 hour</p>
+                <div class="btn-group">
+                    <a href="https://www.amazon.com/dp/B00NKMOW40/ref=cm_sw_r_tw_dp_x_48nGAbTWHHZ9Q" target="_blank" class="button btn1"><i
+                            class="icon fab fa-amazon"></i>Available on Amazon Prime</a>
+                    <a href="https://channelstore.roku.com/details/86186/24-hour-movie-channel" target="_blank" class="button btn2"><i
+                            class="icon icon-roku"></i>Or watch free on Roku</a>
+                </div>
+            <div class="galleryItem">
+                <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="8SB1WQQFSrQ"></div>
+            </div>
+        </div>
     </section>
+
+    <section id="videoEditor">
+        <h1>Video Editor</h1>
+        <p>I make music videos for bands and promotional packages for small businesses and performing artists. As a Promotions Editor for Acme Television, I put together localized promotional packages of syndicated and network programming for broadcast television and social media.</p>
+        <p>No matter the scale or budget, </p>
+    </section>
+
     <footer>
 
     </footer>
