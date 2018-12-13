@@ -9,11 +9,12 @@
     <meta name="keywords" content="Design,Director,Editor,Writer,Video,Motion,Graphics,">
     <title>Mikel-Jon West</title>
     <script src="script.js"></script>
-    <script src="https://player.vimeo.com/api/player.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
-    <script src="https://cdn.plyr.io/3.4.7/plyr.polyfilled.js" async></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.4.7/plyr.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/icon-style.css">
 </head>
 <body>
 
@@ -25,45 +26,106 @@
             <li class="designer"><a href="#designer">Graphics &amp; Web Designer</a></li>
         </ul>
         <img class="profile" src="./images/profile.png" alt="Profile">
-        <div class="reel" style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/254593581?title=0&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
-                mozallowfullscreen allowfullscreen></iframe>
-        </div>
+        <div class='reel embed-container'><iframe src='https://player.vimeo.com/video/254593581?title=0&byline=0&portrait=0' frameborder='0'
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+       
     </header>
 
     <section id="writerDirector">
         <h1>Writer/Director</h1>
         <p>I write and direct feature length films for <strong><a href="https://megaultra.space" target="_blank">Mega Ultra Studios</a></strong> like <em><a href="https://megaultra.space/features.html" target="_blank">Left for Dead</a>,</em> available on <strong><a href="https://www.amazon.com/dp/B00NKMOW40/ref=cm_sw_r_tw_dp_x_48nGAbTWHHZ9Q" target="_blank">Amazon Prime</a></strong> and streaming on <strong><a href="https://channelstore.roku.com/details/86186/24-hour-movie-channel" target="_blank">Roku</a></strong> and short films like the three-time award-winner, <em><a href="https://www.youtube.com/watch?v=ERoAFhlFZ-s" target="_blank">My New Best Friend.</a></em> </p>
-
+    <div class="container">
+        <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="8SB1WQQFSrQ"></div>
+    </div>
         <div class="gallery">
-            <div class="lfd galleryItem">
+            <div class="galleryItem">
                 <h2 class="title">Left for Dead</h2>
+                <div class='embed-container'><iframe src='https://www.youtube.com/embed/8SB1WQQFSrQ' frameborder='0' allowfullscreen></iframe></div>
                 <p class="description">They killed their little sister. Now, these hell kittens are coming after the hitmen and they
                     will show no mercy. Soon, they'll all be Left for Dead.
-                    <br><br>Starring: Holly Rebelle, General Blackery, Joy Coy
-                    <br>Runtime: 1 hour</p>
+                    <br><br>Starring: Holly Rebelle, General Blackery, Joy Coy</p>
                 <div class="btn-group">
                     <a href="https://www.amazon.com/dp/B00NKMOW40/ref=cm_sw_r_tw_dp_x_48nGAbTWHHZ9Q" target="_blank" class="button btn1"><i
                             class="icon fab fa-amazon"></i>Available on Amazon Prime</a>
                     <a href="https://channelstore.roku.com/details/86186/24-hour-movie-channel" target="_blank" class="button btn2"><i
                             class="icon icon-roku"></i>Or watch free on Roku</a>
                 </div>
-            <div class="galleryItem">
-                <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="8SB1WQQFSrQ"></div>
-            </div>
+        </div>
+        <div class="galleryItem">
+            <h2 class="title">My New Best Friend</h2>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/ERoAFhlFZ-s' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <p class="description">What would you do with an alien that looks exactly like a celebrity? Find out in this 48 Hour Film Project Sci-Fi
+            three-time award winning short film.
+                <br><br>Winners of:<br>
+                Best Actor - Steven Ray Byrd<br>
+                Best Ensemble Acting<br>
+                Best Use of a Prop</p>
+        </div>
+        <div class="galleryItem">
+            <h2 class="title">Happy Birthday to Me</h2>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/Fne9SeS2f4U' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <p class="description">Happy Birthday to Me, a 48 Hour Film Project for Albuquerque 2015. Rejection hurts.
+                <br><br>Genre: Period Piece</p>
+        </div>
+        <div class="galleryItem">
+            <h2 class="title">The Giles Files</h2>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/dJtn9FvNOco' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <p class="description">The Giles Files, a 48 Hour Horror Film Project for Albuquerque, New Mexico produced by Mega Ultra Studios and Byrdman
+            Group.
+                <br><br>Genre: Found Footage</p>
         </div>
     </section>
 
     <section id="videoEditor">
         <h1>Video Editor</h1>
-        <p>I make music videos for bands and promotional packages for small businesses and performing artists. As a Promotions Editor for Acme Television, I put together localized promotional packages of syndicated and network programming for broadcast television and social media.</p>
-        <p>No matter the scale or budget, </p>
+        <p>I make <strong><a href="https://www.youtube.com/playlist?list=PLA7-QbGRlgE1-AyxcV2G6uU-tioOuvIFO" target="_blank">Music Videos</a></strong> for bands and <strong><a href="https://www.youtube.com/watch?v=X10UzndJBy8" target="_blank">Promotional Packages</a></strong> for <strong><a href="https://www.youtube.com/watch?time_continue=2&v=-tI8MtaXN28" target="_blank">small businesses</a></strong> and performing artists. As a <strong><a href="https://www.youtube.com/watch?time_continue=6&v=dM1VoNSCm8s" target="_blank">Promotions Editor</a></strong> for <strong><a href="https://www.linkedin.com/company/kwbq-tv/about/" target="_blank">Acme Television</a></strong>, I put together localized promotional packages of syndicated and network programming for broadcast television and social media.</p>
+        <div class="gallery">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/aSLMHHMhLIE' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/TFRXAaAJNwE' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/czLha0PfnIU' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/xLHsb0GAoGI' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/5-0eyXXcnQo' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/6B5MFod2Qy0' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/-BOWC3JasJ8' frameborder='0' allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/eohWgztGEYM' frameborder='0' allowfullscreen></iframe></div>
+        </div>
+    </section>
+
+    <section id="designer">
+        <h1>Graphics &amp; Web Designer</h1>
+        <p>I make <strong><a href="https://www.youtube.com/playlist?list=PLA7-QbGRlgE1-AyxcV2G6uU-tioOuvIFO" target="_blank">Music
+                    Videos</a></strong> for bands and <strong><a href="https://www.youtube.com/watch?v=X10UzndJBy8" target="_blank">Promotional
+                    Packages</a></strong> for <strong><a href="https://www.youtube.com/watch?time_continue=2&v=-tI8MtaXN28"
+                    target="_blank">small businesses</a></strong> and performing artists. As a <strong><a href="https://www.youtube.com/watch?time_continue=6&v=dM1VoNSCm8s"
+                    target="_blank">Promotions Editor</a></strong> for <strong><a href="https://www.linkedin.com/company/kwbq-tv/about/"
+                    target="_blank">Acme Television</a></strong>, I put together localized promotional packages of
+            syndicated and network programming for broadcast television and social media.</p>
+        <div class="gallery">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/aSLMHHMhLIE' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/TFRXAaAJNwE' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/czLha0PfnIU' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/xLHsb0GAoGI' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/5-0eyXXcnQo' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/6B5MFod2Qy0' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/-BOWC3JasJ8' frameborder='0'
+                    allowfullscreen></iframe></div>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/eohWgztGEYM' frameborder='0'
+                    allowfullscreen></iframe></div>
+        </div>
     </section>
 
     <footer>
 
     </footer>
-    
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
 </body>
 </html>
