@@ -13,6 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
         crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/icon-style.css">
 </head>
@@ -100,23 +102,40 @@
         <p>I have a BFA in Media Arts, focusing on Filmmaking and Visual Design.  </p>
         <p>For Mega Ultra Studios, I do all the Poster Art and Disk Inserts, Digital Assets for streaming platforms,</p>
         
-        <div class="gallery">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/aSLMHHMhLIE' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/TFRXAaAJNwE' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/czLha0PfnIU' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/xLHsb0GAoGI' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/5-0eyXXcnQo' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/6B5MFod2Qy0' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/-BOWC3JasJ8' frameborder='0'
-                    allowfullscreen></iframe></div>
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/eohWgztGEYM' frameborder='0'
-                    allowfullscreen></iframe></div>
+        <div ID="sketchbook" data-nanogallery2='{
+                "itemsBaseURL": "./sketchbook/",
+                "thumbnailWidth": "auto",
+                "colorScheme": {
+                  "thumbnail": {
+                    "background": "rgba(68,68,68,0.23)"
+                  }
+                },
+                "thumbnailDisplayTransition": "slideLeft",
+                "thumbnailLabel": {
+                  "titleMultiLine": true,
+                  "displayDescription": true,
+                  "descriptionMultiLine": true
+                },
+                "allowHTMLinData": true,
+                "thumbnailHoverEffect2": "imageBlurOff|labelSlideUp|imageScaleIn80",
+                "galleryDisplayMode": "pagination",
+                "galleryMaxRows": 2,
+                "galleryPaginationMode": "dots",
+                "thumbnailAlignment": "fillWidth",
+                "gallerySorting": "random",
+                "thumbnailLevelUp": true
+              }'>
+            <a href="" data-ngkind="album" data-ngid="sketchbook" data-ngthumb="berlin1_t.jpg">Sketchbook</a>
+            <a href="Batman.jpg" data-ngthumb="Batman.jpg" data-ngdesc="Skulking Batman">Batman</a>
+            <a href="Batmen.jpg" data-ngthumb="Batmen.jpg" data-ngdesc="A group of Batmen">Batmen</a>
+            <a href="Beast.jpg" data-ngthumb="Beast.jpg" data-ngdesc="X-Men's Beast">Beast</a>
+            <a href="Fawn.jpg" data-ngthumb="Fawn.jpg" data-ngdesc="My love">Fawn</a>
+            <a href="FawnDancing.jpg" data-ngthumb="FawnDancing.jpg" data-ngdesc="My love doing what she loves">Fawn Dancing</a>
+            <a href="FlyGuy.jpg" data-ngthumb="FlyGuy.jpg" data-ngdesc="It's a fly, guy.">Fly Guy</a>
+            <a href="hurock.jpg" data-ngthumb="hurock.jpg" data-ngdesc="This guy is jamming out.">HuRock</a>
+            <a href="Maxx.jpg" data-ngthumb="Maxx.jpg" data-ngdesc="The Maxx">The Maxx</a>
+            <a href="ProfX.jpg" data-ngthumb="ProfX.jpg" data-ngdesc="X-Men's Professor X">Professor X</a>
+            <a href="Venom.jpg" data-ngthumb="Venom.jpg" data-ngdesc="Venom">Venom</a>
         </div>
     </section>
 
